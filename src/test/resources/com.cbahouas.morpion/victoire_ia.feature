@@ -1,14 +1,19 @@
 # language: fr
+#Fonctionnalité: Détection de victoire au Morpion
+#  En tant que joueur de morpion
+#  Je veux que le système détecte automatiquement les victoires
+#  Afin de déterminer le gagnant de la partie
+
 Fonctionnalité: Victoire de l'IA dans le jeu de morpion
   En tant que joueur
   Je veux que l'IA puisse gagner la partie lorsqu'elle a une opportunité
 
-
   Scénario: Victoire de l'IA
-    Étant donné que l'IA a déjà deux symboles alignés
+    Étant donné que le plateau est vide
+    Quand l'IA a déjà deux symboles alignés
+    Et que la troisième case de l’alignement est vide
     Et que c’est à lui de jouer
-    Quand il joue sur la troisième case de l’alignement
-    Alors l'IA doit être déclaré gagnant
+    Alors l'IA doit jouer dans cette case
     Et la partie doit être terminée
 
   Scénario: Match nul

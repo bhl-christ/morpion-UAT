@@ -1,35 +1,100 @@
 package com.cbahouas.morpion;
 
-import io.cucumber.java.fr.Étantdonné;
+import io.cucumber.java.PendingException;
+import io.cucumber.java.fr.*;
 
 public class SetupSteps {
     private MyWorld myWorld;
 
-    public SetupSteps(MyWorld myWorld) {
-        this.myWorld = myWorld;
+    public SetupSteps(MyWorld myWorld) { this.myWorld = myWorld; }
+
+    @Étantdonnéque("le plateau est vide")
+    public void lePlateauEstVide() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
     }
 
-    @Étantdonné("que le plateau est vide")
-    public void lePlateauEstVide() {}
+    @Quand("l'IA commence une partie")
+    public void lIACommenceUnePartie() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Alors("le plateau doit contenir {int} cases vides")
+    public void lePlateauDoitContenirCasesVides(int arg0) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Et("l'IA doit être le premier à jouer")
+    public void lIADoitÊtreLePremierÀJouer() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Quand("l'IA joue dans une case vide")
+    public void lIAJoueDansUneCaseVide() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Alors("la case doit contenir {string}")
+    public void laCaseDoitContenir(String arg0) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Et("le tour doit passer au joueur {string}")
+    public void leTourDoitPasserAuJoueur(String arg0) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 
     @Étantdonné("qu’une case est déjà occupée par {string}")
-    public void uneCaseEstDejaOccupeePar(String joueur) {}
+    public void quUneCaseEstDéjàOccupéePar(String arg0) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 
-    @Étantdonné("qu’un joueur a déjà deux symboles alignés")
-    public void unJoueurADejaDeuxSymbolesAlignes() {}
+    @Quand("l'IA tente de jouer dans cette case")
+    public void lIATenteDeJouerDansCetteCase() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 
-    @Étantdonné("que la partie est presque terminée")
-    public void laPartieEstPresqueTerminee() {}
+    @Alors("le jeu doit refuser le coup")
+    public void leJeuDoitRefuserLeCoup() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 
-    @Étantdonné("que toutes les cases du plateau sont remplies sauf la dernière")
-    public void toutesLesCasesRempliesSaufDerniere() {}
+    @Et("la case doit toujours contenir {string}")
+    public void laCaseDoitToujoursContenir(String arg0) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 
-    @Étantdonné("qu’aucune ligne, colonne ou diagonale complète n’est gagnante")
-    public void aucuneVictoirePossible() {}
+    @Et("c’est encore à l'IA de jouer")
+    public void cEstEncoreÀLIADeJouer() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 
-    @Étantdonné("que c’est au joueur {string} de jouer")
-    public void cestAuJoueurDeJouer(String joueur) {}
+    @Quand("l'IA joue le premier coup")
+    public void lIAJoueLePremierCoup() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 
-    @Étantdonné("que c’est à lui de jouer")
-    public void cestALuiDeJouer() {}
+    @Alors("l'IA doit placer son symbole {string} dans un coin")
+    public void lIADoitPlacerSonSymboleDansUnCoin(String arg0) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Et("le tour doit passer au joueur")
+    public void leTourDoitPasserAuJoueur() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 }
